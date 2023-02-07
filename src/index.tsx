@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hello from './components/Hello';
 import Message from './components/Message';
-import Parent from './components/ContainerSample';
+import { Parent } from './components/ContainerSample';
 import Counter from './components/Counter';
 import NewCounter from './components/NewCounter';
+import { NewParent } from './components/CallbackSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +20,7 @@ root.render(
     <Parent />
     <Counter initialValue={1} />
     <NewCounter initialValue={1} />
+    <NewParent />
   </React.StrictMode>
 );
 
